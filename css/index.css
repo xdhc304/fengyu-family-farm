@@ -2,8 +2,8 @@ body {
     font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
     color: #333;
     background-color: #fff;
-    min-width: 1200px;
-    margin: 0;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -33,16 +33,16 @@ body {
 
 .txt {
     text-indent: 2em;
-    margin: 0 20px 10px;
+    margin: 0 20px 5px;
     line-height: 1.6em;
 }
 
 .img {
-    width: 290px;
+    width: 280px;
 }
 
 .img-left {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .foot {
@@ -53,6 +53,11 @@ body {
     width: 97%;
     margin: -15px auto 20px;
     border-top: 1px solid #e0e0e0;
+    transform: scaleY(0.4);
+    -ms-transform: scaleY(0.4);	/* IE 9 */
+    -moz-transform: scaleY(0.4);	/* Firefox */
+    -webkit-transform: scaleY(0.4); /* Safari 和 Chrome */
+    -o-transform: scaleY(0.4); 	/* Opera */
 }
 
 .split-vertical {
@@ -66,7 +71,7 @@ body {
 .address {
     margin-top: 10px;
     color: #575757;
-    font-size: 20px;
+    font-size: 13px;
     line-height: 30px;
     font-weight: 400;
 }
