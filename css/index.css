@@ -34,6 +34,7 @@ body {
 .txt {
     text-indent: 2em;
     margin: 0 20px 10px;
+    line-height: 1.6em;
 }
 
 .img {
