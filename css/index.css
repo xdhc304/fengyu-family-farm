@@ -55,16 +55,16 @@ body {
     border-right: 1px solid #e0e0e0;;
 }
 
+.contact {
+    margin-left: 20px
+}
+
 .address {
     margin-top: 10px;
     color: #575757;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
-}
-
-.wechat {
-    width: 100px;
 }
 
 .saoyisao, .call {
@@ -75,6 +75,10 @@ body {
 
 .saoyisao {
     margin-left: 6px;
+}
+
+.wechat {
+    width: 100px;
 }
 
 .tel a{
