@@ -45,9 +45,13 @@ body {
     margin-left: 20px;
 }
 
+.foot {
+    margin-bottom: 20px;
+}
+
 .split-horizontal {
     width: 97%;
-    margin: -15px auto 15px;
+    margin: -15px auto 20px;
     border-top: 1px solid #e0e0e0;
 }
 
