@@ -14,14 +14,19 @@
 <body>
 <el-container id="app">
     <el-header>
+        <el-row type="flex" justify="end">
+            <el-col :span="24">
+                <div class="head">销售热线：0554-3168588、173-6439-8856</div>
+            </el-col>
+        </el-row>
+    </el-header>
+    <el-main>
         <el-row>
             <el-col :span="6">
                 <!--<div class="logo"></div>-->
                 <img :src="img_logo" alt="logo" class="logo">
             </el-col>
         </el-row>
-    </el-header>
-    <el-main>
         <!--<el-row>
             <el-col>
                 <el-carousel indicator-position="outside">
