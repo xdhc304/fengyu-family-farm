@@ -13,10 +13,15 @@ body {
     background: #333;
 }
 
-.el-main, .el-footer, .head {
+.el-main {
+    padding: 20px 0 20px 0 !important;
+}
+
+.contain, .el-footer, .head {
     width: 1200px;
     margin: 0 auto;
 }
+
 .head {
     padding-left: 80px;
 }
@@ -24,10 +29,6 @@ body {
 .logo {
     height: 60px;
     margin-left: -20px;
-    /*background-image: url("../images/logo.png");
-    background-repeat: no-repeat;
-    background-size: 100% 50px;
-    background-position: -10px bottom;*/
 }
 
 .contain {
@@ -39,7 +40,6 @@ body {
 }
 
 .title {
-    margin-left: 20px;
     font-size: 22px;
     font-weight: 200;
     line-height: 58px;
@@ -48,8 +48,17 @@ body {
 
 .txt {
     text-indent: 2em;
-    margin: 0 20px 5px;
+    margin-bottom: 5px;
     line-height: 1.8em;
+}
+
+.txt-left {
+    margin-right: 20px;
+}
+
+.txt-right {
+    margin-left: -5px;
+    width: 880px;
 }
 
 .img {
@@ -58,18 +67,6 @@ body {
 
 .img-banner {
     width: 100%;
-}
-
-.img-left {
-    margin-left: 20px;
-}
-
-.img-xia {
-    height: 160px;
-}
-
-.img-jianjie {
-    height: 150px;
 }
 
 .foot {
