@@ -22,6 +22,15 @@
         </el-row>
     </el-header>
     <el-main>
+        <!--<el-row>
+            <el-col>
+                <el-carousel indicator-position="outside">
+                    <el-carousel-item v-for="item in bannerList" :key="item">
+                        <img :src="item" alt="轮播" class="img-banner">
+                    </el-carousel-item>
+                </el-carousel>
+            </el-col>
+        </el-row>-->
         <el-row class="contain">
             <el-row>
                 <el-col :span="2">
@@ -167,7 +176,8 @@
         el: '#app',
         data: {
             img_logo: './images/logo.png',
-            img_xia: './images/longxia.jpg'
+            img_xia: './images/longxia.jpg',
+            bannerList: ['./images/banner_xia.jpg']
         }
     })
 </script>

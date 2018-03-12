@@ -41,6 +41,10 @@ body {
     width: 270px;
 }
 
+.img-banner {
+    width: 100%;
+}
+
 .img-left {
     margin-left: 20px;
 }
@@ -119,3 +123,19 @@ body {
     font-weight: 400;
     text-decoration: none;
 }
+
+/* .el-carousel__item h3 {
+    color: #475669;
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 800px;
+    margin: 0;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }*/
