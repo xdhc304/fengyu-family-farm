@@ -58,18 +58,25 @@ body {
 }
 
 .split-horizontal {
-    width: 97%;
-    margin: -15px auto 20px;
+    width: 100%;
+    margin: 0 auto 20px;
     border-top: 1px solid #e0e0e0;
-    transform: scaleY(0.4);
-    -ms-transform: scaleY(0.4);	/* IE 9 */
-    -moz-transform: scaleY(0.4);	/* Firefox */
-    -webkit-transform: scaleY(0.4); /* Safari 和 Chrome */
-    -o-transform: scaleY(0.4); 	/* Opera */
+    transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);	/* IE 9 */
+    -moz-transform: scaleY(0.5);	/* Firefox */
+    -webkit-transform: scaleY(0.5); /* Safari 和 Chrome */
+    -o-transform: scaleY(0.5); 	/* Opera */
 }
 
 .split-vertical {
     border-right: 1px solid #e0e0e0;;
+}
+
+.advert {
+    display: flex;
+    justify-content: center;
+    color: #575757;
+    line-height: 25px;
 }
 
 .contact {
@@ -79,9 +86,14 @@ body {
 .address {
     margin-top: 10px;
     color: #575757;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 30px;
     font-weight: 400;
+}
+
+.icon {
+    margin:  0 7px 0 0;
+    font-size: 20px;
 }
 
 .saoyisao, .call {
@@ -100,9 +112,9 @@ body {
 
 .tel a{
     display: block;
-    margin-top: 10px;
+    margin-top: 6px;
     color: #E84519;
-    font-size: 26px;
+    font-size: 25px;
     line-height: 30px;
     font-weight: 400;
     text-decoration: none;
