@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>寿县凤宇家庭农场</title>
     <meta name="description" content="寿县凤宇家庭农场-休闲观光生态园" />
-    <meta name="keywords" content="安徽省,寿县,凤宇家庭农场,休闲观光生态园,龙虾,垂钓,养殖" />
+    <meta name="keywords" content="安徽省,寿县,农场,龙虾,水稻" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="x-dns-prefetch-control" content="on">
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
@@ -14,14 +14,28 @@
 <body>
 <el-container id="app">
     <el-header>
-        <el-row>
+        <el-row type="flex" justify="end">
+            <el-col :span="24">
+                <div class="head">销售热线：0554-3168588、173-6439-8856</div>
+            </el-col>
+        </el-row>
+    </el-header>
+    <el-main>
+        <el-row class="contain">
             <el-col :span="6">
                 <!--<div class="logo"></div>-->
                 <img :src="img_logo" alt="logo" class="logo">
             </el-col>
         </el-row>
-    </el-header>
-    <el-main>
+        <!--<el-row>
+            <el-col>
+                <el-carousel indicator-position="outside">
+                    <el-carousel-item v-for="item in bannerList" :key="item">
+                        <img :src="item" alt="轮播" class="img-banner">
+                    </el-carousel-item>
+                </el-carousel>
+            </el-col>
+        </el-row>-->
         <el-row class="contain">
             <el-row>
                 <el-col :span="2">
@@ -32,41 +46,46 @@
             </el-row>
             <el-row>
                 <el-col :span="18">
-                    <div class="txt">
-                        原产地在中、南美洲和墨西哥东北部地区。中国分布现状：已扩展至安徽、湖北、上海、江苏、香港、台湾等地，形成数量庞大的自然种群。
-                        龙虾的头胸部较粗大，外壳坚硬，色彩斑斓，腹部短小，体长一般在20～40厘米之间，重0.5公斤上下，是虾类中最大的一类。最重的能达到5公斤以上，人称龙虾虎。体呈粗圆筒状，背腹稍平扁，头胸甲发达，坚厚多棘，前缘中央有一对强大的眼上棘，具封闭的鳃室。腹部较短而粗，后部向腹面卷曲，尾扇宽短。龙虾有坚硬、分节的外骨骼。胸博具五对足其中一或多对常变形为螯，一侧的螯通常大于对侧者。眼位于可活动的眼柄上。有两对长触角。腹部形长，有多对游泳足，尾呈鳍状，用以游，尾部和腹部的弯曲活动可推展身体前进。
+                    <div class="txt txt-left">
+                        克氏原螯虾俗称小龙虾，属温热带淡水虾类。
+                    </div>
+                    <div class="txt txt-left">
+                        凤宇家庭农场的小龙虾生长在美丽富饶的安丰塘畔，这里不仅是驰名中外的旅游胜地，更是田园古朴的鱼米之乡；这里的人们勤劳朴实，常年以种植水稻为主，是寿州大米优质稻谷原产地，是国家商品粮基地；这里无工业污染，蓝天白云，鸟语花香，碧波荡漾，路林成网，是安居乐业的人间天堂。在此产出的小龙虾，虾肉细嫩，营养丰富，深受国内外消费者喜爱。
+                    </div>
+                    <div class="txt txt-left">
+                        凤宇家庭农场致力于龙虾产业的创新和发展，利用“天下第一塘”——安丰塘来源于大别山区优质的无污染水资源和肥沃的土地资源，着力在池塘养殖，标准化养殖管理技术，标准化养殖模式设计，连锁餐饮配送等方面，努力帮助当地农户改变单一水稻种植模式，拓展致富之路。与龙虾经营者建立广泛的合作关系，使众多的合作者从中受益，达到多赢目的。
                     </div>
                 </el-col>
                 <el-col :span="5">
-                    <img src="images/xia1.jpg" alt="龙虾" class="img-xia">
+                    <img src="images/xia1.jpg" alt="龙虾" class="img">
                 </el-col>
             </el-row>
         </el-row>
 
-        <el-row class="contain backcolor-dark">
-            <el-row>
-                <el-col :span="2">
-                    <div class="title">
-                        水稻
-                    </div>
-                </el-col>
+        <div class="backcolor-dark">
+            <el-row class="contain">
+                <el-row>
+                    <el-col :span="4">
+                        <div class="title">
+                            稻虾共养
+                        </div>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="5">
+                        <img src="images/dao1.jpg" alt="水稻" class="img">
+                    </el-col>
+                    <el-col :span="18" :offset="1">
+                        <div class="txt txt-right">
+                            凤宇家庭农场利用天然的无污染的土地资源和优质的水资源，以充分利用稻、虾、鱼、鸭生活生态互补优势，最大限度地挖掘稻田生产潜力。
+                        </div>
+                        <div class="txt txt-right">
+                            重点开发稻虾共生，形成一个新的复合生态系统，采用传统的栽培养殖方法，生产绿色、有机无害的健康产品。最终实现在有限的稻田内获得稻虾双高产，达到增收的目的。
+                        </div>
+                    </el-col>
+                </el-row>
             </el-row>
-            <el-row>
-                <el-col :span="5">
-                    <img src="images/dao1.jpg" alt="水稻" class="img img-left">
-                </el-col>
-                <el-col :span="18" :offset="1">
-                    <div class="txt">
-                        水稻（学名：Oryza sativa）是草本稻属的一种，也是稻属中作为粮食的最主要最悠久的一种，又称为亚洲型栽培稻，简单来说也可以说是稻。为一年生，禾本科植物，单子叶，性喜温湿，成熟时约有1米高，叶子细长，约有50到100厘米长，宽约2到2.5厘米。稻米的花非常小，开花时，主要花枝会呈现拱形，在枝头往下30到50毫米间都会开小花，大部分自花授粉并结种子，称为稻穗。一般稻粒的大小在5到12毫米长，2到3毫米厚度。
-                        是一年生禾本科植物，24条染色体。
-                    </div>
-                    <div class="txt">
-                        水稻喜高温、多湿、短日照，对土壤要求不严，水稻土最好。幼苗发芽最低温度10～12℃，最适28～32℃。分蘖期日均20℃以上，穗分化适温30℃左右；低温使枝梗和颖花分化延长。抽穗适温25～35℃。开花最适温30℃左右，低于20℃或高于40℃，受精受严重影响。每形成1千克稻谷约需水500～800千克。
-                        水稻属须根系，不定根发达，穗为圆锥花序，自花授粉。是一年生栽培谷物。秆直立，高30～100厘米。叶二列互生，线状披针形，叶舌膜质，2裂。圆锥花序疏松；小穗长圆形，两侧压扁，含3朵小花，颖极退化，仅留痕迹，顶端小花两性，外稃舟形，有芒；雄蕊6；退化2花仅留外稃位于两性花之下，常误认作颖片。颖果。
-                    </div>
-                </el-col>
-            </el-row>
-        </el-row>
+        </div>
 
         <el-row class="contain">
             <el-row>
@@ -78,13 +97,13 @@
             </el-row>
             <el-row>
                 <el-col :span="18">
-                    <div class="txt">
-                       凤宇家庭农场——稻虾生态种养示范基地位于寿县安丰塘镇井亭村团结渠东侧、井大路北侧，一期工程占地316亩，项目投资150万元。
+                    <div class="txt txt-left">
+                        凤宇家庭农场——稻虾生态种养示范基地位于寿县安丰塘镇井亭村团结渠东侧、井大路北侧，一期工程占地316亩。
                     </div>
-                    <div class="txt">
+                    <div class="txt txt-left">
                         项目当前依托江苏盱眙满江红龙虾产业园有限公司雄厚的技术支撑和营销网络，结合基地现状，重点推广有机水稻栽培和龙虾养殖的生产模式，实现单位土地面积经济效益的最大化，并且带动周边农户脱贫致富。
                     </div>
-                    <div class="txt">
+                    <div class="txt txt-left">
                         凤宇家庭农场计划在一期实施的基础之上，在2-3年内，逐步扩大基地面积，建设安丰塘凤宇生态产业园区。实现有机种植，绿色养殖，产销一体化经营。培训、实习、营销一条龙服务，集种植、养殖、加工、旅游、休闲、观光为一体的现代化农业产业园。
                     </div>
                 </el-col>
@@ -95,20 +114,46 @@
         </el-row>
     </el-main>
     <el-footer>
-        <div class="split-horizontal"></div>
         <el-row type="flex" justify="space-between" class="foot">
-            <el-col :span="6" class="contact">
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-star-off icon"></i>品质优良
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-sold-out icon"></i>价格实惠
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-picture-outline icon"></i>环境优美
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-service icon"></i>服务专业
+                </div>
+            </el-col>
+        </el-row>
+        <div class="split-horizontal"></div>
+
+        <el-row type="flex" justify="space-between" class="foot">
+            <el-col :span="7" class="contact">
                 <div class="call">
                     联系我们
                 </div>
                 <div class="address">
-                    安徽省寿县安丰塘镇井亭村井大路与团结渠交叉口
+                    <i class="el-icon-location-outline icon"></i>安徽省寿县安丰塘镇井亭村井大路与团结渠交叉口
                 </div>
             </el-col>
             <div class="split-vertical"></div>
             <el-col :span="2">
                 <div class="saoyisao">
-                    微信关注
+                    微信客服
                 </div>
                 <div class="call">
                     <img src="./images/wechat.jpg" alt="微信" class="wechat">
@@ -117,13 +162,13 @@
             <div class="split-vertical"></div>
             <el-col :span="6">
                 <div class="call">
-                    联系电话
+                    销售热线
                 </div>
                 <div class="tel">
                     <a href="tel:0554-3168588">0554-3168588</a>
                 </div>
                 <div class="tel">
-                    <a href="tel:17364398856">17364398856</a>
+                    <a href="tel:17364398856">173-6439-8856</a>
                 </div>
             </el-col>
         </el-row>
@@ -138,8 +183,9 @@
     new Vue({
         el: '#app',
         data: {
-            img_logo: './images/logo.png',
-            img_xia: './images/longxia.jpg'
+            img_logo: './images/logo1.png',
+            img_xia: './images/longxia.jpg',
+            bannerList: ['./images/banner_xia.jpg']
         }
     })
 </script>
