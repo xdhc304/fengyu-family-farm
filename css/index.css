@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .el-header {
     height: 40px !important;
     line-height: 40px;
@@ -17,22 +21,26 @@ body {
     padding: 20px 0 20px 0 !important;
 }
 
-.contain, .el-footer, .head {
+.contain, .el-footer, .el-header> .el-row {
     width: 1200px;
     margin: 0 auto;
 }
 
-.head {
-    padding-left: 80px;
-}
-
 .logo {
     height: 60px;
-    margin-left: -20px;
+    margin-left: -40px;
+}
+
+.el-menu--horizontal {
+    border-bottom: none;
+}
+
+.el-menu--horizontal>.el-menu-item a {
+    color: #333;
 }
 
 .contain {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 .backcolor-dark {
@@ -49,7 +57,7 @@ body {
 .txt {
     text-indent: 2em;
     margin-bottom: 5px;
-    line-height: 1.8em;
+    line-height: 1.9em;
 }
 
 .txt-left {
@@ -107,6 +115,10 @@ body {
     font-weight: 400;
 }
 
+.address a {
+    color: #575757;
+}
+
 .icon {
     margin:  3px 8px 0 0;
     font-size: 20px;
@@ -133,7 +145,6 @@ body {
     font-size: 25px;
     line-height: 30px;
     font-weight: 400;
-    text-decoration: none;
 }
 
 /* .el-carousel__item h3 {
