@@ -33,19 +33,18 @@
                 </el-menu>
             </el-col>
         </el-row>
-        <!--<el-row>
+        <el-row class="contain">
             <el-col>
-                <el-carousel indicator-position="outside">
-                    <el-carousel-item v-for="item in bannerList" :key="item">
-                        <img :src="item" alt="轮播" class="img-banner">
-                    </el-carousel-item>
-                </el-carousel>
+                <el-breadcrumb separator-class="el-icon-arrow-right">
+                    <el-breadcrumb-item>网站首页</el-breadcrumb-item>
+                    <el-breadcrumb-item>联系我们</el-breadcrumb-item>
+                </el-breadcrumb>
             </el-col>
-        </el-row>-->
+        </el-row>
         <el-row class="contain">
             <el-row type="flex" justify="center">
-                <el-col :span="14">
-                    <iframe src="./map.html"  frameborder="0"  width="716"  height="552"></iframe>
+                <el-col :span="22">
+                    <iframe src="./map.html"  frameborder="0"  width="1102"  height="460"></iframe>
                 </el-col>
             </el-row>
         </el-row>

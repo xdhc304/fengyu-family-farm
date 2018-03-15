@@ -37,6 +37,7 @@ a {
 
 .el-menu--horizontal>.el-menu-item a {
     color: #333;
+    font-size: 15px;
 }
 
 .contain {
@@ -71,10 +72,6 @@ a {
 
 .img {
     width: 270px;
-}
-
-.img-banner {
-    width: 100%;
 }
 
 .foot {
