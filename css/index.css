@@ -7,6 +7,11 @@ body {
 
 a {
     text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #409EFF;
 }
 
 .el-header {
@@ -17,13 +22,25 @@ a {
     background: #333;
 }
 
+
+.el-footer {
+    line-height: 60px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background: #f5f5f5;
+}
+
 .el-main {
     padding: 20px 0 20px 0 !important;
 }
 
-.contain, .el-footer, .el-header> .el-row {
+.contain, .foot, .el-header> .el-row {
     width: 1200px;
     margin: 0 auto;
+}
+
+.foot {
+    margin-top: 20px;
 }
 
 .logo {
@@ -36,12 +53,11 @@ a {
 }
 
 .el-menu--horizontal>.el-menu-item a {
-    color: #333;
     font-size: 15px;
 }
 
 .contain {
-    padding-bottom: 12px;
+    padding-bottom: 18px;
 }
 
 .backcolor-dark {
@@ -53,6 +69,11 @@ a {
     font-weight: 200;
     margin: 20px 0 5px;
     color: #333;
+}
+
+.viewmore {
+    float: right;
+    margin-top: 26px;
 }
 
 .txt {
@@ -74,13 +95,9 @@ a {
     width: 270px;
 }
 
-.foot {
-    margin-bottom: 20px;
-}
-
 .split-horizontal {
-    width: 100%;
-    margin: 0 auto 20px;
+    width: 1200px;
+    margin: 20px auto;
     border-top: 1px solid #e0e0e0;
     transform: scaleY(0.5);
     -ms-transform: scaleY(0.5);	/* IE 9 */
@@ -144,18 +161,50 @@ a {
     font-weight: 400;
 }
 
-/* .el-carousel__item h3 {
-    color: #475669;
-    font-size: 18px;
-    opacity: 0.75;
-    line-height: 800px;
-    margin: 0;
-  }
+.qq {
+    position: relative;
+    top: 3px;
+}
 
-  .el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
-  }
+.img-news {
+    width: 100%;
+    display: block;
+}
 
-  .el-carousel__item:nth-child(2n+1) {
-    background-color: #d3dce6;
-  }*/
+.desc {
+    font-size: 13px;
+    color: #999;
+}
+
+.bottom-news {
+    margin-top: 13px;
+    line-height: 12px;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.news-title {
+    margin-left: 30px;
+}
+
+.news-left {
+    margin-left: 20px;
+}
+
+.news-bottom {
+    margin-bottom: 20px;
+}
+
+.news-tip {
+    float: right;
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-right: 30px;
+}

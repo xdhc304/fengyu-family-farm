@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="UTF-8" />
+    <title>寿县凤宇家庭农场</title>
+    <meta name="description" content="寿县凤宇家庭农场——休闲观光生态园，集龙虾养殖，虾稻共养、休闲观光于一体。销售热线：0554-3168588、173-6439-8856" />
+    <meta name="keywords" content="寿县,农场,龙虾,水稻,养殖" />
+    <meta name="viewport" content="width=1200">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<el-container id="app">
+    <el-header>
+        <el-row type="flex" justify="space-between">
+            <el-col :span="6">
+                <div>销售热线：0554-3168588、173-6439-8856</div>
+            </el-col>
+        </el-row>
+    </el-header>
+    <el-main>
+        <el-row class="contain" type="flex" justify="space-between">
+            <el-col :span="6">
+                <!--<div class="logo"></div>-->
+                <a href="./index.html"><img :src="img_logo" alt="logo" class="logo"></a>
+            </el-col>
+            <el-col :span="6">
+                <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
+                    <el-menu-item index="1"><a href="./index.html">网站首页</a></el-menu-item>
+                    <el-menu-item index="2"><a href="./hotnews.html" style="color: #409EFF">热点资讯</a></el-menu-item>
+                    <el-menu-item index="3"><a href="./contact.html">联系我们</a></el-menu-item>
+                </el-menu>
+            </el-col>
+        </el-row>
+        <el-row class="contain" style="margin-top: -20px">
+            <el-row type="flex" justify="center">
+                <el-col :span="17" class="news-title">
+                    <h1 class="title">
+                        识别公虾和母虾
+                    </h1>
+                </el-col>
+            </el-row>
+            <el-row type="flex" justify="center">
+                <el-col :span="8">
+                    <el-card :body-style="{ padding: '0px' }">
+                        <img src="./images/gongxia.jpg" class="img-news">
+                        <div style="padding: 14px;">
+                            <span>公虾</span>
+                            <div class="bottom-news clearfix">
+                                <time class="desc">腹部有2个硬的小腿</time>
+                            </div>
+                        </div>
+                    </el-card>
+                </el-col>
+
+                <el-col :span="8" class="news-left">
+                        <el-card :body-style="{ padding: '0px' }">
+                            <img src="./images/muxia.jpg" class="img-news">
+                            <div style="padding: 14px;">
+                                <span>母虾</span>
+                                <div class="bottom-news clearfix">
+                                    <time class="desc">腹部没有2个硬的小腿</time>
+                                </div>
+                            </div>
+                        </el-card>
+                    </el-col>
+            </el-row>
+        </el-row>
+
+        <div class="backcolor-dark">
+            <el-row class="contain">
+                <el-row type="flex" justify="center">
+                    <el-col :span="17" class="news-title">
+                        <h1 class="title">
+                            虾的多种口味
+                        </h1>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center">
+                    <el-col :span="8" class="news-bottom">
+                        <el-card :body-style="{ padding: '0px' }">
+                            <img src="./images/qingzhengxia.jpg" class="img-news">
+                            <div style="padding: 14px;">
+                                <span>清蒸小龙虾</span>
+                                <div class="bottom-news clearfix">
+                                    <time class="desc">严格按照隔水清蒸，最大限度保留小龙虾的肉质鲜味。</time>
+                                </div>
+                            </div>
+                        </el-card>
+                    </el-col>
+
+                    <el-col :span="8" class="news-left news-bottom">
+                        <el-card :body-style="{ padding: '0px' }">
+                            <img src="./images/bingzhenxia.jpg" class="img-news">
+                            <div style="padding: 14px;">
+                                <span>冰镇小龙虾</span>
+                                <div class="bottom-news clearfix">
+                                    <time class="desc">虾王冰镇，肉质更爽口。</time>
+                                </div>
+                            </div>
+                        </el-card>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center">
+                    <el-col :span="8" class="news-bottom">
+                        <el-card :body-style="{ padding: '0px' }">
+                            <img src="./images/danhuangxia.jpg" class="img-news">
+                            <div style="padding: 14px;">
+                                <span>咸蛋黄小龙虾</span>
+                                <div class="bottom-news clearfix">
+                                    <time class="desc">咸蛋黄和虾膏完美融合，口感甘香，两者相加大于二的享受。</time>
+                                </div>
+                            </div>
+                        </el-card>
+                    </el-col>
+
+                    <el-col :span="8" class="news-left news-bottom">
+                        <el-card :body-style="{ padding: '0px' }">
+                            <img src="./images/jiaoyanxia.jpg" class="img-news">
+                            <div style="padding: 14px;">
+                                <span>椒盐小龙虾</span>
+                                <div class="bottom-news clearfix">
+                                    <time class="desc">材质要够新鲜，虾肉够饱满。</time>
+                                </div>
+                            </div>
+                        </el-card>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center">
+                    <el-col :span="8" class="news-bottom">
+                        <el-card :body-style="{ padding: '0px' }">
+                            <img src="./images/shisanxiangxia.jpg" class="img-news">
+                            <div style="padding: 14px;">
+                                <span>十三香小龙虾</span>
+                                <div class="bottom-news clearfix">
+                                    <time class="desc">味道浓郁</time>
+                                </div>
+                            </div>
+                        </el-card>
+                    </el-col>
+
+                    <el-col :span="8" class="news-left news-bottom">
+                        <el-card :body-style="{ padding: '0px' }">
+                            <img src="./images/youmenxia.jpg" class="img-news">
+                            <div style="padding: 14px;">
+                                <span>油焖小龙虾</span>
+                                <div class="bottom-news clearfix">
+                                    <time class="desc">味道浓郁</time>
+                                </div>
+                            </div>
+                        </el-card>
+                    </el-col>
+                </el-row>
+                <el-row type="flex" justify="center">
+                    <el-col :span="8" class="">
+                        <el-card :body-style="{ padding: '0px' }">
+                            <img src="./images/suanrongxia.jpg" class="img-news">
+                            <div style="padding: 14px;">
+                                <span>蒜蓉小龙虾</span>
+                                <div class="bottom-news clearfix">
+                                    <time class="desc">味道浓郁</time>
+                                </div>
+                            </div>
+                        </el-card>
+                    </el-col>
+
+                    <el-col :span="8" class="news-left">
+                        <el-card :body-style="{ padding: '0px' }">
+                            <img src="./images/longxiazhou.jpg" class="img-news">
+                            <div style="padding: 14px;">
+                                <span>小龙虾粥</span>
+                                <div class="bottom-news clearfix">
+                                    <time class="desc">只有新鲜的小龙虾，才能煮出新鲜的小龙虾粥，味道鲜甜。</time>
+                                </div>
+                            </div>
+                        </el-card>
+                    </el-col>
+                </el-row>
+            </el-row>
+            <el-row type="flex" justify="center" class="contain">
+                <el-col :span="17" class="news-title">
+                    <div class="news-tip">
+                        注：本页面部分内容来自网络
+                    </div>
+                </el-col>
+            </el-row>
+        </div>
+
+        <el-row type="flex" justify="space-between" class="foot">
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-star-off icon"></i>品质优良
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-sold-out icon"></i>价格实惠
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-picture-outline icon"></i>环境优美
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-service icon"></i>服务专业
+                </div>
+            </el-col>
+        </el-row>
+        <div class="split-horizontal"></div>
+
+        <el-row type="flex" justify="space-between" class="foot">
+            <el-col :span="7" class="contact">
+                <div class="call">
+                    基地位置
+                </div>
+                <div class="address">
+                    <a href="./contact.html"><i class="el-icon-location-outline icon"></i>安徽省寿县安丰塘镇井亭村井大路与团结渠交叉口</a>
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="2">
+                <div class="saoyisao">
+                    微信客服
+                </div>
+                <div class="call">
+                    <img src="./images/wechat.jpg" alt="微信" class="wechat">
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="6">
+                <div class="call">
+                    销售热线
+                </div>
+                <div class="tel">
+                    <a href="tel:0554-3168588">0554-3168588</a>
+                </div>
+                <div class="tel">
+                    <a href="tel:17364398856">173-6439-8856</a>
+                </div>
+            </el-col>
+        </el-row>
+    </el-main>
+    <el-footer>
+        <el-row type="flex" justify="center">
+            <el-col :span="6" :offset="1">
+                <div>版权所有 ©fengyufarm.com 寿县凤宇家庭农场</div>
+            </el-col>
+            <el-col :span="4" :offset="1">
+                <div>网站技术支持：
+                    <svg width="16" height="16" class="qq" xmlns="http://www.w3.org/2000/svg"><path d="M14.496 10.35c-.301-1.705-1.565-2.822-1.565-2.822.18-1.548-.481-1.823-.481-1.823C12.31.915 8.089.998 8 1 7.91.998 3.689.915 3.55 5.705c0 0-.662.275-.481 1.823 0 0-1.264 1.117-1.565 2.822 0 0-.16 2.882 1.445.353 0 0 .36.96 1.022 1.823 0 0-1.183.392-1.083 1.412 0 0-.04 1.136 2.527 1.058 0 0 1.805-.137 2.347-.882h.476c.542.745 2.347.882 2.347.882 2.566.078 2.527-1.058 2.527-1.058.1-1.02-1.083-1.412-1.083-1.412a7.986 7.986 0 0 0 1.022-1.823c1.604 2.529 1.445-.353 1.445-.353z" fill="#B3B3B3" fill-rule="evenodd"></path></svg>
+                    1171286725
+                </div>
+            </el-col>
+        </el-row>
+    </el-footer>
+</el-container>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            img_logo: './images/logo1.png',
+            img_xia: './images/longxia.jpg',
+            bannerList: ['./images/banner_xia.jpg'],
+            activeIndex: 1
+        }
+    })
+</script>
+</html>

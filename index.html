@@ -29,7 +29,8 @@
             <el-col :span="4">
                 <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
                     <el-menu-item index="1"><a href="./index.html" style="color: #409EFF">网站首页</a></el-menu-item>
-                    <el-menu-item index="2"><a href="./contact.html">联系我们</a></el-menu-item>
+                    <!--<el-menu-item index="2"><a href="./hotnews.html">热点资讯</a></el-menu-item>-->
+                    <el-menu-item index="3"><a href="./contact.html">联系我们</a></el-menu-item>
                 </el-menu>
             </el-col>
         </el-row>
@@ -42,13 +43,18 @@
                 </el-carousel>
             </el-col>
         </el-row>
-        <el-row class="contain">
+        <el-row class="contain" style="margin-top: -20px">
             <el-row>
                 <el-col :span="2">
                     <h1 class="title">
                         龙虾
                     </h1>
                 </el-col>
+                <!--<el-col :span="2" :offset="20">
+                    <div class="viewmore">
+                        <a href="./hotnews.html">查看更多 <i class="el-icon-arrow-right"></i></a>
+                    </div>
+                </el-col>-->
             </el-row>
             <el-row>
                 <el-col :span="18">
@@ -63,7 +69,7 @@
                     </div>
                 </el-col>
                 <el-col :span="5">
-                    <img src="images/xia1.jpg" alt="龙虾" class="img">
+                    <img src="images/xia.jpg" alt="龙虾" class="img">
                 </el-col>
             </el-row>
         </el-row>
@@ -79,7 +85,7 @@
                 </el-row>
                 <el-row>
                     <el-col :span="5">
-                        <img src="images/dao1.jpg" alt="水稻" class="img">
+                        <img src="images/dao.jpg" alt="水稻" class="img">
                     </el-col>
                     <el-col :span="18" :offset="1">
                         <div class="txt txt-right">
@@ -118,8 +124,7 @@
                 </el-col>
             </el-row>
         </el-row>
-    </el-main>
-    <el-footer>
+
         <el-row type="flex" justify="space-between" class="foot">
             <el-col :span="5" class="contact">
                 <div class="advert">
@@ -178,6 +183,19 @@
                 </div>
             </el-col>
         </el-row>
+    </el-main>
+    <el-footer>
+        <el-row type="flex" justify="center">
+            <el-col :span="6" :offset="1">
+                <div>版权所有 ©fengyufarm.com 寿县凤宇家庭农场</div>
+            </el-col>
+            <el-col :span="4" :offset="1">
+                <div>网站技术支持：
+                    <svg width="16" height="16" class="qq" xmlns="http://www.w3.org/2000/svg"><path d="M14.496 10.35c-.301-1.705-1.565-2.822-1.565-2.822.18-1.548-.481-1.823-.481-1.823C12.31.915 8.089.998 8 1 7.91.998 3.689.915 3.55 5.705c0 0-.662.275-.481 1.823 0 0-1.264 1.117-1.565 2.822 0 0-.16 2.882 1.445.353 0 0 .36.96 1.022 1.823 0 0-1.183.392-1.083 1.412 0 0-.04 1.136 2.527 1.058 0 0 1.805-.137 2.347-.882h.476c.542.745 2.347.882 2.347.882 2.566.078 2.527-1.058 2.527-1.058.1-1.02-1.083-1.412-1.083-1.412a7.986 7.986 0 0 0 1.022-1.823c1.604 2.529 1.445-.353 1.445-.353z" fill="#B3B3B3" fill-rule="evenodd"></path></svg>
+                    1171286725
+                </div>
+            </el-col>
+        </el-row>
     </el-footer>
 </el-container>
 </body>
@@ -191,7 +209,7 @@
         data: {
             img_logo: './images/logo1.png',
             img_xia: './images/longxia.jpg',
-            bannerList: ['./images/banner_xia.jpg'],
+            bannerList: ['./images/banner.jpg'],
             activeIndex: 1
         }
     })
