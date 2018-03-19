@@ -26,17 +26,17 @@
                 <!--<div class="logo"></div>-->
                 <a href="./index.html"><img :src="img_logo" alt="logo" class="logo"></a>
             </el-col>
-            <el-col :span="4">
+            <el-col :span="6">
                 <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
                     <el-menu-item index="1"><a href="./index.html" style="color: #409EFF">网站首页</a></el-menu-item>
-                    <!--<el-menu-item index="2"><a href="./hotnews.html">热点资讯</a></el-menu-item>-->
+                    <el-menu-item index="2"><a href="./hotnews1.html">热点资讯</a></el-menu-item>
                     <el-menu-item index="3"><a href="./contact.html">联系我们</a></el-menu-item>
                 </el-menu>
             </el-col>
         </el-row>
         <el-row class="contain">
             <el-col>
-                <el-carousel indicator-position="outside" height="460px">
+                <el-carousel indicator-position="outside" height="460px" interval="5000">
                     <el-carousel-item v-for="item in bannerList" :key="item">
                         <img :src="item" alt="轮播" height="460">
                     </el-carousel-item>
@@ -50,11 +50,11 @@
                         龙虾
                     </h1>
                 </el-col>
-                <!--<el-col :span="2" :offset="20">
+                <el-col :span="2" :offset="20">
                     <div class="viewmore">
-                        <a href="./hotnews.html">查看更多 <i class="el-icon-arrow-right"></i></a>
+                        <a href="./hotnews1.html">查看更多 <i class="el-icon-arrow-right"></i></a>
                     </div>
-                </el-col>-->
+                </el-col>
             </el-row>
             <el-row>
                 <el-col :span="18">
@@ -69,7 +69,7 @@
                     </div>
                 </el-col>
                 <el-col :span="5">
-                    <img src="images/xia.jpg" alt="龙虾" class="img">
+                    <img src="images/xia1.jpg" alt="龙虾" class="img">
                 </el-col>
             </el-row>
         </el-row>
@@ -207,9 +207,9 @@
     new Vue({
         el: '#app',
         data: {
-            img_logo: './images/logo1.png',
+            img_logo: './images/logo2.png',
             img_xia: './images/longxia.jpg',
-            bannerList: ['./images/banner.jpg'],
+            bannerList: ['./images/banner_xia.jpg','./images/banner.jpg'],
             activeIndex: 1
         }
     })
