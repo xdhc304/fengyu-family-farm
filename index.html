@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>寿县凤宇家庭农场</title>
     <meta name="description" content="寿县安丰塘镇凤宇家庭农场——休闲观光生态园，集龙虾养殖、虾稻共养、休闲观光于一体。销售热线：0554-3168588、173-6439-8856" />
-    <meta name="keywords" content="寿县,农场,家庭农场.龙虾,水稻" />
+    <meta name="keywords" content="寿县,农场,家庭农场,龙虾,水稻" />
     <meta name="viewport" content="width=1200">
     <meta http-equiv="x-dns-prefetch-control" content="on">
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
@@ -26,17 +26,18 @@
                 <!--<div class="logo"></div>-->
                 <a href="./index.html"><img :src="img_logo" alt="logo" class="logo"></a>
             </el-col>
-            <el-col :span="6">
+            <el-col :span="9">
                 <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
                     <el-menu-item index="1"><a href="./index.html" style="color: #409EFF">网站首页</a></el-menu-item>
                     <el-menu-item index="2"><a href="./hotnews1.html">热点资讯</a></el-menu-item>
+                    <el-menu-item index="2"><a href="./cooperation.html">合作伙伴</a></el-menu-item>
                     <el-menu-item index="3"><a href="./contact.html">联系我们</a></el-menu-item>
                 </el-menu>
             </el-col>
         </el-row>
         <el-row class="contain">
             <el-col>
-                <el-carousel indicator-position="outside" height="460px" interval="5000">
+                <el-carousel height="460px" interval="5000">
                     <el-carousel-item v-for="item in bannerList" :key="item">
                         <img :src="item" alt="轮播" height="460">
                     </el-carousel-item>
@@ -69,7 +70,10 @@
                     </div>
                 </el-col>
                 <el-col :span="5">
-                    <img src="images/xia1.jpg" alt="龙虾" class="img">
+                    <!--<img src="images/xia1.jpg" alt="龙虾" class="img">-->
+                    <video width="298" controls>
+                        <source src="./images/xia.mp4" type="video/mp4">
+                    </video>
                 </el-col>
             </el-row>
         </el-row>
