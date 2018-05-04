@@ -10,6 +10,10 @@
     <meta http-equiv="x-dns-prefetch-control" content="on">
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <link rel="stylesheet" href="./css/index.css">
+    <!-- import Vue before Element -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 </head>
 <body>
 <el-container id="app">
@@ -265,10 +269,6 @@
     </el-footer>
 </el-container>
 </body>
-<!-- import Vue before Element -->
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
-<!-- import JavaScript -->
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script>
     new Vue({
         el: '#app',
