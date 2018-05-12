@@ -8,12 +8,12 @@
     <meta name="keywords" content="寿县,农场,家庭农场,龙虾,水稻" />
     <meta name="viewport" content="width=1200">
     <meta http-equiv="x-dns-prefetch-control" content="on">
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-    <link rel="stylesheet" href="./css/index.css">
     <!-- import Vue before Element -->
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <!-- import JavaScript -->
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
 <el-container id="app">
@@ -131,6 +131,15 @@
                     <img src="images/jianjie.jpg" alt="基地简介" class="img">
                 </el-col>
             </el-row>
+            <!--<el-row type="flex" justify="center">-->
+                <!--<el-col :span="23">-->
+                    <!--<el-carousel :interval="4000" type="card" height="100px">-->
+                        <!--<el-carousel-item v-for="item in jianjieList" :key="item">-->
+                            <!--<img :src="item" alt="基地简介" height="200">-->
+                        <!--</el-carousel-item>-->
+                    <!--</el-carousel>-->
+                <!--</el-col>-->
+            <!--</el-row>-->
         </el-row>
 
         <el-row type="flex" justify="space-between" class="foot">
@@ -195,7 +204,7 @@
     <el-footer>
         <el-row type="flex" justify="center">
             <el-col :span="6" :offset="1">
-                <div>版权所有 ©fengyufarm.com 寿县凤宇家庭农场</div>
+                <div>版权所有 ©2018 寿县凤宇家庭农场</div>
             </el-col>
             <el-col :span="4" :offset="1">
                 <div>皖ICP备18006854号</div>
@@ -217,7 +226,8 @@
             img_logo: './images/logo2.png',
             img_xia: './images/longxia.jpg',
             bannerList: ['./images/banner_xia.jpg','./images/banner.jpg'],
-            activeIndex: 1
+            activeIndex: 1,
+            jianjieList: ['./images/chengzhang.jpg','./images/chengzhang2.jpg','./images/shouhuo1.jpg','./images/shouhuo5.jpg','./images/shouhuo2.jpg','./images/shouhuo4.jpg']
         }
     })
 </script>
