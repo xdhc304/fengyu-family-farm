@@ -169,6 +169,8 @@ a:hover {
 .img-news {
     width: 100%;
     display: block;
+    object-fit: cover;
+    max-height: 298.48px;
 }
 
 .desc {
